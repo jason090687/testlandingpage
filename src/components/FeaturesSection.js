@@ -1,19 +1,24 @@
 import React from "react";
 import { FcApproval } from "react-icons/fc";
-import { FaRegClock, FaChartLine, FaBullseye } from "react-icons/fa";
-import "../components/featuresection.css"
+import "../components/featuresection.css";
+
+// Import images from the assets folder
+import ClockImage from "../assets/Delivery Time.png";
+import ChartImage from "../assets/Total Sales.png";
+import TargetImage from "../assets/Target.png";
+
 function FeatureSection() {
   const features = [
     {
-      icon: <FaRegClock size={50} color="#FCB316" />,
+      icon: <img src={ClockImage} alt="Clock" style={{ width: 100, height: 100 }} />,
       title: "Cost & Time Efficiency",
     },
     {
-      icon: <FaChartLine size={50} color="#FCB316" />,
+      icon: <img src={ChartImage} alt="Chart" style={{ width: 100, height: 100 }} />,
       title: "Improved Reporting and Analytics",
     },
     {
-      icon: <FaBullseye size={50} color="#FCB316" />,
+      icon: <img src={TargetImage} alt="Target" style={{ width: 100, height: 100 }} />,
       title: "Accurate Tracking",
     },
   ];

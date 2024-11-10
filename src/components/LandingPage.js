@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "../assets/Logo.png";
 import model from "../assets/model.png";
 import "../components/landingpage.css";
@@ -6,25 +6,27 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import FeatureSection from "./FeaturesSection";
 import AppInfoSection from "./AppInfoSection";
+import Footer from "./Footer";
 
 function LandingPage() {
-  const [animate, setAnimate] = useState(false);
+  // const [animate, setAnimate] = useState(false);
 
-  useEffect(() => {
-    // Trigger the animation on component mount or refresh
-    setAnimate(true);
+  // useEffect(() => {
+  //   // Trigger the animation on component mount or refresh
+  //   setAnimate(true);
 
-    // Reset animation after it finishes (optional)
-    const timer = setTimeout(() => setAnimate(false), 1500); // 1.5 seconds (animation duration + delay)
+  //   // Reset animation after it finishes (optional)
+  //   const timer = setTimeout(() => setAnimate(false), 1500); // 1.5 seconds (animation duration + delay)
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, []);
+  //   return () => clearTimeout(timer); // Cleanup timer on unmount
+  // }, []);
 
   return (
     <div className="landing-page">
       {/* Navbar */}
       <div className="navbar">
         <div className="navbar__header">
+          <div className="navbar_con">
           <div className="navbar__logo">
             <img src={logo} alt="Logo" />
           </div>
@@ -32,13 +34,14 @@ function LandingPage() {
             <a href="/">Home</a>
             <a href="/">About CMI</a>
           </div>
+          </div>
           <div className="navbar__auth">
             <a href="/">Login</a>
             <button className="button button--signup">Sign Up</button>
           </div>
         </div>
       </div>
-      <div className={`main-content ${animate ? "animate" : ""}`}>
+      <div className="main-content animate">
         <div className="main-content__container">
           <div className="greeting-section">
             <h1 className="greeting-section__title">Welcome to CountMeIn.</h1>
@@ -58,7 +61,6 @@ function LandingPage() {
                   <span className="contact-info__number">+639068793484</span>
                 </span>
               </div>
-              <span className="contact-info__divider">/</span>
               <div className="contact-info__item">
                 <MdOutlineMail className="contact-info__icon" />
                 <span>Email here: countmein@gmail.com</span>
@@ -72,6 +74,7 @@ function LandingPage() {
       </div>
       <FeatureSection />
       <AppInfoSection/>
+      <Footer/>
     </div>
   );
 }

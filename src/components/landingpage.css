@@ -23,9 +23,15 @@
   width: 100%;
 }
 
+.navbar_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar__logo img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .navbar__links a {
@@ -108,7 +114,7 @@
 
 .greeting-section__description {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 50px;
 }
 
@@ -123,7 +129,7 @@
 }
 
 .contact-info {
-  display: flex;
+  display: block;
   padding: 20px 0;
 }
 
@@ -132,6 +138,7 @@
   align-items: center;
   gap: 10px;
   color: white;
+  padding-bottom: 10px;
 }
 
 .contact-info__number {
@@ -150,6 +157,7 @@
 .model-image img {
   width: 100%;
 }
+
 
 .rating-section {
   display: flex;
