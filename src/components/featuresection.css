@@ -1,0 +1,35 @@
+.feature-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.feature-section__container {
+  display: flex;
+  gap: 80px;
+}
+
+.feature-item {
+  text-align: center;
+  color: #fcb316;
+}
+
+.feature-item__icon {
+  margin-bottom: 10px;
+}
+
+.feature-item__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  color: #fcb316;
+}
+
+.feature-item__approval-icon {
+  color: #fcb316;
+  font-size: 18px;
+}

@@ -1,0 +1,61 @@
+.app-info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f4f4f4; /* Light background for contrast */
+  height: 80vh;
+
+}
+
+.app-info-section__content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  align-items: flex-start;
+}
+
+.app-info-section__box {
+  background: linear-gradient(145deg, #1a1851, #15134d); /* Dark gradient background */
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.app-info-section__play-button {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-info-section__play-button:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.app-info-section__text {
+  max-width: 600px;
+}
+
+.app-info-section__title {
+  color: #1a1851;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.app-info-section__description {
+  color: #333333;
+  line-height: 1.6;
+  font-size: 16px;
+}
